@@ -2,7 +2,7 @@
 #include <Preferences.h>
 #include <nvs_flash.h>
 
-#define SMART_CONFIG_TIMEOUT 60000 // 5 minutes in milliseconds
+#define SMART_CONFIG_TIMEOUT 60000 // 1 minute in milliseconds
 
 Preferences preferences;
 
