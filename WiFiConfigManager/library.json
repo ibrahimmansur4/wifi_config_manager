@@ -1,0 +1,40 @@
+{
+    "name": "WiFiConfigManager",
+    "version": "1.0.0",
+    "description": "A flexible WiFi configuration manager for ESP32 with smart config, fallback options, and persistent storage",
+    "keywords": "wifi, esp32, smart-config, configuration, iot",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/ibrahimmansur4/wifi_config_manager.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Ibrahim",
+        "email": "ibrahimmansur4@gmail.com",
+        "url": "https://ibrahimmansur.me"
+      },
+      {
+        "name": "Shan"
+      },
+      {
+        "name": "KytherTek",
+        "url": "https://www.linkedin.com/company/kythertek/posts/?feedView=all"
+      }
+    ],
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": ["espressif32"],
+    "dependencies": {
+      "WiFi": "*",
+      "Preferences": "*"
+    },
+    "examples": [
+      {
+        "name": "Basic Usage",
+        "base": "examples/BasicUsage",
+        "files": ["BasicUsage.ino", "BasicUsage.cpp"]
+      }
+    ]
+  }
