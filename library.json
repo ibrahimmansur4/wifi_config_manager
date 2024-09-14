@@ -1,6 +1,6 @@
 {
     "name": "WiFiConfigManager",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A flexible WiFi configuration manager for ESP32 with smart config, fallback options, and persistent storage",
     "keywords": "wifi, esp32, smart-config, configuration, iot",
     "repository":

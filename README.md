@@ -49,6 +49,36 @@ void loop() {
 }
 ```
 
+## How to Add Credentials
+
+To add WiFi credentials to your ESP32 device using the Smart Config feature, follow these steps:
+
+1. Download and install the ESPTouch app on your Android device:
+   [ESPTouch on Google Play](https://play.google.com/store/apps/details?id=com.fyent.esptouch.android&hl=en)
+
+2. Ensure your Android device is connected to the WiFi network you want to share with your ESP32.
+
+3. Open the ESPTouch app.
+
+4. Enter the password for your WiFi network in the app.
+
+5. Power on your ESP32 device with the WiFiConfigManager running.
+
+6. In the ESPTouch app, tap the "Confirm" or "Broadcast" button to start sending the credentials.
+
+7. The ESP32 will listen for the Smart Config broadcast for one minute. During this time, it should receive and save the credentials.
+
+8. If successful, your ESP32 will connect to the WiFi network, and the `isConnected()` method will return true.
+
+![image 1](data/images/1.png)
+![image 2](data/images/2.png)
+![image 3](data/images/3.png)
+![image 4](data/images/4.jpeg)
+
+![Smart Config Demo](/data/videos/howtolib-ezgif.com-video-to-gif-converter.gif)
+
+Note: The Smart Config process uses your phone to broadcast the WiFi credentials. Ensure you're in a secure environment when using this feature.
+
 ## API Reference
 
 - `WiFiConfigManager(const String& defaultSSID, const String& defaultPassword, bool shouldClearPreferences)`
